@@ -10,7 +10,7 @@ public class CurrentTimerUI : MonoBehaviour
 
     private void Update()
     {
-        redTimer.text = GameManager.Instance.currentRedTimer.ToString("#.##");
-        blueTimer.text = GameManager.Instance.currentBlueTimer.ToString("#.##");
+        redTimer.text = "Red: " + GameManager.Instance.currentRedTimer.ToString("#.##");
+        blueTimer.text = "Blue: " + GameManager.Instance.currentBlueTimer.ToString("#.##");
     }
 }

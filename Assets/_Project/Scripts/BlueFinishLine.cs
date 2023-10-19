@@ -14,7 +14,7 @@ public class BlueFinishLine : MonoBehaviour
             GameManager.Instance.state = GameManager.State.Finished;
 
             finishTimer.gameObject.SetActive(true);
-            finishTimer.text = ((float)GameManager.Instance.currentRedTimer + (float)GameManager.Instance.currentBlueTimer).ToString("#.##");
+            finishTimer.text = "Finish: " + ((float)GameManager.Instance.currentRedTimer + (float)GameManager.Instance.currentBlueTimer).ToString("#.##");
         }
     }
 }
