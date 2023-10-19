@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class BlueCar : MonoBehaviour
 {
+    public static BlueCar Instance { get; private set; }
+
     // Movement
     private Vector3 moveAxis;
-    private float moveSpeed = 4f;
+    public float moveSpeed = 4f;
 
     // Turning
     private Vector3 turnAxis;
     private float turnSpeed = 80f;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Update()
     {
