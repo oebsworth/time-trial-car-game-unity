@@ -9,11 +9,14 @@ public class BlueBarrel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameManager.Instance.currentBlueBarrelCount++;
-        this.gameObject.SetActive(false);
-        if (maxBlueBarrelCounter <= GameManager.Instance.currentBlueBarrelCount)
+        if (collision.GetComponent<RedCar>() == null)
         {
-            blueArrow.SetActive(true);
+            GameManager.Instance.currentBlueBarrelCount++;
+            this.gameObject.SetActive(false);
+            if (maxBlueBarrelCounter <= GameManager.Instance.currentBlueBarrelCount)
+            {
+                blueArrow.SetActive(true);
+            }
         }
     }
 }
