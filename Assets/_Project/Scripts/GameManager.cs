@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
     public int currentRedBarrelCount;
     public int currentBlueBarrelCount;
 
-    private float currentRedTimer;
-    private float currentBlueTimer;
+    public float currentRedTimer;
+    public float currentBlueTimer;
 
     private void Awake()
     {
