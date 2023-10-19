@@ -978,6 +978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03935ddf861b4d84a9b1359358212699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: 0
   currentRedBarrelCount: 0
   currentBlueBarrelCount: 0
 --- !u!4 &525595494
@@ -1012,7 +1013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &692855950
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3770,6 +3771,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1924216584}
   - component: {fileID: 1924216583}
+  - component: {fileID: 1924216585}
   m_Layer: 0
   m_Name: BlueFinishLine
   m_TagString: Untagged
@@ -3837,6 +3839,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1924216585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1924216582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 819351ac188fd9f4e8434b8babcacbd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1927392898
 PrefabInstance:
   m_ObjectHideFlags: 0

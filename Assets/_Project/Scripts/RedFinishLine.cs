@@ -17,6 +17,8 @@ public class RedFinishLine : MonoBehaviour
             Camera.main.transform.SetParent(blueCar.transform);
             Camera.main.transform.position = new Vector3(blueCar.transform.position.x, blueCar.transform.position.y, -10f);
             Camera.main.transform.rotation = blueCar.transform.rotation;
+
+            GameManager.Instance.state = GameManager.State.BlueCar;
         }
     }
 }
