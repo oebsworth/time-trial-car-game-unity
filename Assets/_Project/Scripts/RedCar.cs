@@ -29,6 +29,7 @@ public class RedCar : MonoBehaviour
     {
         moveAxis = new Vector3(0f, Input.GetAxis("Vertical"), 0f);
         transform.Translate(moveAxis * moveSpeed * Time.deltaTime);
+        Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, -10f);
     }
 
     private void turnCar()
