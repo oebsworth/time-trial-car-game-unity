@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedCar : MonoBehaviour
+public class OrangeCar : MonoBehaviour
 {
-    public static RedCar Instance { get; private set; } 
+    public static OrangeCar Instance { get; private set; } 
 
     // Movement
     private Vector3 moveAxis;

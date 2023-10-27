@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 25062328}
   - component: {fileID: 25062329}
   m_Layer: 0
-  m_Name: tent_red (2)
+  m_Name: tent_orange (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 27529417}
   - component: {fileID: 27529416}
   m_Layer: 5
-  m_Name: RedTimerText
+  m_Name: OrangeTimerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Red: '
+  m_text: 'Orange: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -845,7 +845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6448813294100296081, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_Name
-      value: RedBarrel (4)
+      value: OrangeBarrel (4)
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 766386485552900383, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
@@ -1159,11 +1159,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5610066840955183366, guid: dc231efb20408ff49ad89090d5d3dcae, type: 3}
       propertyPath: m_Name
-      value: RedCar
+      value: OrangeCar
       objectReference: {fileID: 0}
     - target: {fileID: 5610066840955183366, guid: dc231efb20408ff49ad89090d5d3dcae, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089165970671002077, guid: dc231efb20408ff49ad89090d5d3dcae, type: 3}
+      propertyPath: m_Name
+      value: OrangeCarVisual
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1356,7 +1360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 523611861}
   m_Layer: 0
-  m_Name: RedBarrelContainer
+  m_Name: OrangeBarrelContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1413,9 +1417,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  currentRedBarrelCount: 0
+  currentOrangeBarrelCount: 0
   currentBlueBarrelCount: 0
-  currentRedTimer: 0
+  currentOrangeTimer: 0
   currentBlueTimer: 0
 --- !u!4 &525595494
 Transform:
@@ -2533,7 +2537,7 @@ GameObject:
   - component: {fileID: 692855950}
   - component: {fileID: 692855952}
   m_Layer: 0
-  m_Name: RedFinishLine
+  m_Name: OrangeFinishLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2611,7 +2615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8148551f146dba64fb47d5fd810cbafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redCar: {fileID: 1562759550}
+  orangeCar: {fileID: 0}
   blueCar: {fileID: 1478932541}
 --- !u!1 &729176331
 GameObject:
@@ -4759,7 +4763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc05edd6bb3aa4d44b3d2e45ee6f5c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redTimer: {fileID: 27529416}
+  orangeTimer: {fileID: 0}
   blueTimer: {fileID: 806786743}
 --- !u!1001 &1091018047
 PrefabInstance:
@@ -6536,7 +6540,7 @@ GameObject:
   - component: {fileID: 1458311927}
   - component: {fileID: 1458311928}
   m_Layer: 0
-  m_Name: tent_red
+  m_Name: tent_orange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6671,7 +6675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6448813294100296081, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_Name
-      value: RedBarrel
+      value: OrangeBarrel
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 766386485552900383, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
@@ -7108,11 +7112,6 @@ Transform:
   - {fileID: 1641185687}
   m_Father: {fileID: 982945331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1562759550 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5610066840955183366, guid: dc231efb20408ff49ad89090d5d3dcae, type: 3}
-  m_PrefabInstance: {fileID: 473453188}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1641185686
 GameObject:
   m_ObjectHideFlags: 0
@@ -8209,7 +8208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6448813294100296081, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_Name
-      value: RedBarrel (5)
+      value: OrangeBarrel (5)
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 766386485552900383, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
@@ -8234,7 +8233,7 @@ GameObject:
   - component: {fileID: 1826886375}
   - component: {fileID: 1826886376}
   m_Layer: 0
-  m_Name: tent_red (1)
+  m_Name: tent_orange (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8719,7 +8718,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6448813294100296081, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_Name
-      value: RedBarrel (2)
+      value: OrangeBarrel (2)
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 766386485552900383, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
@@ -8795,7 +8794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6448813294100296081, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_Name
-      value: RedBarrel (3)
+      value: OrangeBarrel (3)
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 766386485552900383, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
@@ -9830,7 +9829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6448813294100296081, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_Name
-      value: RedBarrel (1)
+      value: OrangeBarrel (1)
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 766386485552900383, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
@@ -10254,21 +10253,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 418023050}
     m_Modifications:
+    - target: {fileID: -6034294642020611975, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
+      propertyPath: redFinishLine
+      value: 
+      objectReference: {fileID: 692855949}
     - target: {fileID: 1541665367584174973, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1771174919854567517, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
-      propertyPath: redFinishLine
-      value: 
-      objectReference: {fileID: 692855949}
     - target: {fileID: 2685134108328515954, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
       propertyPath: m_Name
-      value: RedArrow
+      value: OrangeArrow
       objectReference: {fileID: 0}
     - target: {fileID: 2685134108328515954, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5227358792628407446, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
+      propertyPath: m_Name
+      value: OrangeArrowVisual
       objectReference: {fileID: 0}
     - target: {fileID: 8212616412953071053, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
       propertyPath: m_LocalPosition.x

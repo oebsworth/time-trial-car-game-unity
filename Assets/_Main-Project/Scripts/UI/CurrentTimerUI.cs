@@ -6,14 +6,14 @@ using UnityEngine;
 public class CurrentTimerUI : MonoBehaviour
 {
     [Header("Timers")]
-    [SerializeField] TextMeshProUGUI redTimer;
+    [SerializeField] TextMeshProUGUI orangeTimer;
     [SerializeField] TextMeshProUGUI blueTimer;
 
     private void Update()
     {
-        if (GameManager.Instance.state == GameManager.State.RedCar)
+        if (GameManager.Instance.state == GameManager.State.OrangeCar)
         {
-            UpdateTimerText(redTimer, "Red", GameManager.Instance.currentRedTimer);
+            UpdateTimerText(orangeTimer, "Orange", GameManager.Instance.currentOrangeTimer);
         }
         else if (GameManager.Instance.state == GameManager.State.BlueCar)
         {

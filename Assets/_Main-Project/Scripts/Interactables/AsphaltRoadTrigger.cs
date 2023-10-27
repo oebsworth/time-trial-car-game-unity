@@ -6,9 +6,9 @@ public class AsphaltRoadTrigger : MonoBehaviour
 {
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<RedCar>() != null || collision.gameObject.GetComponent<BlueCar>() != null)
+        if (collision.gameObject.GetComponent<OrangeCar>() != null || collision.gameObject.GetComponent<BlueCar>() != null)
         {
-            RedCar.Instance.moveSpeed = 4f;
+            OrangeCar.Instance.moveSpeed = 4f;
             BlueCar.Instance.moveSpeed = 4f;
         }
     }

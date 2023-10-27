@@ -20,7 +20,7 @@ public class BlueFinishLine : MonoBehaviour
             blueCar.GetComponent<BlueCar>().enabled = false;
 
             finishTimer.gameObject.SetActive(true);
-            finishTimer.text = "Finish: " + ((float)GameManager.Instance.currentRedTimer + (float)GameManager.Instance.currentBlueTimer).ToString("0.00");
+            finishTimer.text = "Finish: " + ((float)GameManager.Instance.currentOrangeTimer + (float)GameManager.Instance.currentBlueTimer).ToString("0.00");
         }
     }
 }

@@ -8,17 +8,17 @@ public class GameManager : MonoBehaviour
 
     public enum State
     {
-        RedCar,
+        OrangeCar,
         BlueCar,
         Finished,
     }
 
     public State state;
 
-    public int currentRedBarrelCount;
+    public int currentOrangeBarrelCount;
     public int currentBlueBarrelCount;
 
-    public float currentRedTimer;
+    public float currentOrangeTimer;
     public float currentBlueTimer;
 
     private void Awake()
@@ -30,8 +30,8 @@ public class GameManager : MonoBehaviour
     {
         switch (state)
         {
-            case State.RedCar:
-                currentRedTimer += Time.deltaTime;
+            case State.OrangeCar:
+                currentOrangeTimer += Time.deltaTime;
                 break;
             case State.BlueCar:
                 currentBlueTimer += Time.deltaTime;

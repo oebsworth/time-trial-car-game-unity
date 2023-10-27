@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedFinishLine : MonoBehaviour
+public class OrangeFinishLine : MonoBehaviour
 {
     [Header("Cars")]
-    [SerializeField] GameObject redCar;
+    [SerializeField] GameObject orangeCar;
     [SerializeField] GameObject blueCar;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetComponent<RedCar>() != null)
+        if (collision.GetComponent<OrangeCar>() != null)
         {
-            redCar.GetComponent<RedCar>().enabled = false;
+            orangeCar.GetComponent<OrangeCar>().enabled = false;
             blueCar.GetComponent<BlueCar>().enabled = true;
 
             GameManager.Instance.state = GameManager.State.BlueCar;
