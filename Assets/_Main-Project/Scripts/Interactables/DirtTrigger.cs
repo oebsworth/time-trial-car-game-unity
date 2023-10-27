@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DirtTrigger : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.GetComponent<RedCar>() != null || collision.gameObject.GetComponent<BlueCar>() != null)
         {
