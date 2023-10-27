@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RedFinishLine : MonoBehaviour
 {
+    [Header("Cars")]
     [SerializeField] GameObject redCar;
     [SerializeField] GameObject blueCar;
 

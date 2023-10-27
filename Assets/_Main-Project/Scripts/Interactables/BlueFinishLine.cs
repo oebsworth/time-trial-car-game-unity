@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class BlueFinishLine : MonoBehaviour
 {
+    [Header("Timers")]
     [SerializeField] TextMeshProUGUI finishTimer;
+
+    [Header("Cars")]
     [SerializeField] GameObject blueCar;
 
     private void OnTriggerEnter2D(Collider2D collision)
