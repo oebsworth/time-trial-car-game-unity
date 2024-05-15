@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -837,6 +836,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3592983041644091096, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: redArrow
+      value: 
+      objectReference: {fileID: 170848003}
+    - target: {fileID: 3592983041644091096, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
+      propertyPath: orangeArrow
       value: 
       objectReference: {fileID: 170848003}
     - target: {fileID: 5301945303792165264, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
@@ -2615,7 +2618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8148551f146dba64fb47d5fd810cbafa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orangeCar: {fileID: 0}
+  orangeCar: {fileID: 1844056765}
   blueCar: {fileID: 1478932541}
 --- !u!1 &729176331
 GameObject:
@@ -4763,7 +4766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc05edd6bb3aa4d44b3d2e45ee6f5c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orangeTimer: {fileID: 0}
+  orangeTimer: {fileID: 27529416}
   blueTimer: {fileID: 806786743}
 --- !u!1001 &1091018047
 PrefabInstance:
@@ -6669,6 +6672,10 @@ PrefabInstance:
       propertyPath: redArrow
       value: 
       objectReference: {fileID: 170848003}
+    - target: {fileID: 3592983041644091096, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
+      propertyPath: orangeArrow
+      value: 
+      objectReference: {fileID: 170848003}
     - target: {fileID: 5301945303792165264, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -8202,6 +8209,10 @@ PrefabInstance:
       propertyPath: redArrow
       value: 
       objectReference: {fileID: 170848003}
+    - target: {fileID: 3592983041644091096, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
+      propertyPath: orangeArrow
+      value: 
+      objectReference: {fileID: 170848003}
     - target: {fileID: 5301945303792165264, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -8306,6 +8317,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1844056765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5610066840955183366, guid: dc231efb20408ff49ad89090d5d3dcae, type: 3}
+  m_PrefabInstance: {fileID: 473453188}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1864142556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8712,6 +8728,10 @@ PrefabInstance:
       propertyPath: redArrow
       value: 
       objectReference: {fileID: 170848003}
+    - target: {fileID: 3592983041644091096, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
+      propertyPath: orangeArrow
+      value: 
+      objectReference: {fileID: 170848003}
     - target: {fileID: 5301945303792165264, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -8786,6 +8806,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3592983041644091096, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: redArrow
+      value: 
+      objectReference: {fileID: 170848003}
+    - target: {fileID: 3592983041644091096, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
+      propertyPath: orangeArrow
       value: 
       objectReference: {fileID: 170848003}
     - target: {fileID: 5301945303792165264, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
@@ -9823,6 +9847,10 @@ PrefabInstance:
       propertyPath: redArrow
       value: 
       objectReference: {fileID: 170848003}
+    - target: {fileID: 3592983041644091096, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
+      propertyPath: orangeArrow
+      value: 
+      objectReference: {fileID: 170848003}
     - target: {fileID: 5301945303792165264, guid: 1cdb01db0feaeaa4d82c68784755effa, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -10255,6 +10283,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -6034294642020611975, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
       propertyPath: redFinishLine
+      value: 
+      objectReference: {fileID: 692855949}
+    - target: {fileID: -6034294642020611975, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
+      propertyPath: orangeFinishLine
       value: 
       objectReference: {fileID: 692855949}
     - target: {fileID: 1541665367584174973, guid: 50db5ae04e098f942aa7d80b1827ece2, type: 3}
